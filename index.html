@@ -55,6 +55,10 @@
                 A test button for Android WebView 
               <input type="button" value="Select File" onClick="selectFile()" />
             </p>
+            <p class="lead">
+                Another test button for Android WebView 
+              <input type="button" value="Show Toast" onClick="showToast()" />
+            </p>
           </div>
 
           <div class="mastfoot">
@@ -73,6 +77,9 @@
       function selectFile() {
         // 在 JavaScript 的函数中通过上面设定的接口类名称 Android 调用接口类中的方法
         Android.doSomething();
+      }
+      function showToast() {
+        Android.doAnotherThing();
       }
     </script>
 
